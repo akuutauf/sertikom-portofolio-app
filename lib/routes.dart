@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:tugas_6_simple_app/animation.dart';
-import 'package:tugas_6_simple_app/description_page.dart';
 import 'drawer.dart';
 import 'home_page.dart';
 import 'profile_page.dart';

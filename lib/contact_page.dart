@@ -24,16 +24,16 @@ class ContactPage extends StatelessWidget {
       ),
       drawer: DrawerWidget(),
       body: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
+          // mainAxisAlignment: MainAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               margin: EdgeInsets.all(15),
               child: Text(
                 'CONTACT PAGE',
                 style: TextStyle(fontSize: 20),
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.left,
               ),
             ),
             Container(

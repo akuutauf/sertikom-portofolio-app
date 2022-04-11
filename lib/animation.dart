@@ -12,7 +12,7 @@ class AnimationPage extends StatelessWidget {
         leading: Container(
           child: GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.pop(context);
               },
               child: Icon(Icons.arrow_back)),
         ),

@@ -24,16 +24,17 @@ class ProfilePage extends StatelessWidget {
       ),
       drawer: DrawerWidget(),
       body: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
+          // mainAxisAlignment: MainAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
+              // color: Colors.amber,
               margin: EdgeInsets.all(15),
               child: Text(
                 'PROFILE PAGE',
                 style: TextStyle(fontSize: 20),
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.left,
               ),
             ),
             Container(
