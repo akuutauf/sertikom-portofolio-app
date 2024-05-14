@@ -10,8 +10,8 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           _drawerHeader(),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 15, bottom: 10),
+          const Padding(
+            padding: EdgeInsets.only(left: 20, top: 15, bottom: 10),
             child: Text(
               "General Menu",
               style: TextStyle(
@@ -46,12 +46,12 @@ class DrawerWidget extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, '/contact');
               }),
-          Divider(
+          const Divider(
             height: 25,
             thickness: 1,
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 20, bottom: 10),
+          const Padding(
+            padding: EdgeInsets.only(left: 20, top: 20, bottom: 10),
             child: Text(
               "Advanced Menu",
               style: TextStyle(
@@ -88,7 +88,7 @@ class DrawerWidget extends StatelessWidget {
 }
 
 Widget _drawerHeader() {
-  return UserAccountsDrawerHeader(
+  return const UserAccountsDrawerHeader(
     currentAccountPicture: ClipOval(
       child: Image(
           image: AssetImage('assets/images/akebi_1.jpg'), fit: BoxFit.cover),
@@ -110,10 +110,10 @@ Widget _drawerItem(
       children: <Widget>[
         Icon(icon),
         Padding(
-          padding: EdgeInsets.only(left: 25.0),
+          padding: const EdgeInsets.only(left: 25.0),
           child: Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
             ),
           ),

@@ -9,22 +9,22 @@ class GalleryPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
             Color.fromARGB(255, 255, 128, 177),
             Color.fromARGB(255, 147, 152, 255)
           ], begin: Alignment.topLeft, end: Alignment.bottomCenter)),
         ),
-        title: Text(
+        title: const Text(
           "Gallery",
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
         // automaticallyImplyLeading: false,
       ),
-      drawer: DrawerWidget(),
+      drawer: const DrawerWidget(),
       body: Container(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: ListView(
           children: [
             Row(
@@ -36,14 +36,14 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child: Image.asset('assets/images/japan_1.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Halal Food Asociation",
                               style: TextStyle(
                                   fontSize: 10,
@@ -61,14 +61,14 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child: Image.asset('assets/images/japan_2.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Takushoku University",
                               style: TextStyle(
                                   fontSize: 10,
@@ -90,14 +90,14 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child: Image.asset('assets/images/japan_3.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Genbaku Doom - Hiroshima",
                               style: TextStyle(
                                   fontSize: 10,
@@ -115,14 +115,14 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child: Image.asset('assets/images/japan_4.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Masjid Indonesia - Tokyo",
                               style: TextStyle(
                                   fontSize: 10,
@@ -144,14 +144,14 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child: Image.asset('assets/images/tokyo_tower.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Tokyo Tower Night",
                               style: TextStyle(
                                   fontSize: 10,
@@ -169,15 +169,15 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child:
                                 Image.asset('assets/images/tokyo_skytree.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Tokyo Sky Tree Night",
                               style: TextStyle(
                                   fontSize: 10,
@@ -199,14 +199,14 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child: Image.asset('assets/images/japan_5.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Hiroshima University - I",
                               style: TextStyle(
                                   fontSize: 10,
@@ -224,14 +224,14 @@ class GalleryPage extends StatelessWidget {
                         children: [
                           Container(
                             color: Colors.white,
-                            padding: EdgeInsets.all(3),
-                            margin: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(3),
+                            margin: const EdgeInsets.all(5),
                             child: Image.asset('assets/images/japan_6.jpg'),
                           ),
                           Container(
                             // color: Colors.amber,
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            child: const Text(
                               "Hisroshima University - II",
                               style: TextStyle(
                                   fontSize: 10,

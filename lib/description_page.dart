@@ -9,28 +9,28 @@ class DescriptionPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(colors: [
               Color.fromARGB(255, 255, 128, 177),
               Color.fromARGB(255, 147, 152, 255)
             ], begin: Alignment.topLeft, end: Alignment.bottomCenter)),
           ),
-          title: Text(
+          title: const Text(
             "Desription",
             style: TextStyle(fontWeight: FontWeight.w600),
           ),
           centerTitle: true,
           // automaticallyImplyLeading: false,
         ),
-        drawer: DrawerWidget(),
+        drawer: const DrawerWidget(),
         body: Container(
             child: ListView(
                 // mainAxisAlignment: MainAxisAlignment.start,
                 // crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
               Container(
-                margin: EdgeInsets.all(15),
-                child: Text(
+                margin: const EdgeInsets.all(15),
+                child: const Text(
                   'DESCRIPTION PAGE',
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.left,
@@ -39,30 +39,30 @@ class DescriptionPage extends StatelessWidget {
               Container(
                 child: Card(
                   elevation: 3,
-                  margin: EdgeInsets.only(left: 15, right: 15),
+                  margin: const EdgeInsets.only(left: 15, right: 15),
                   child: Container(
                     width: MediaQuery.of(context).size.width * 1,
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(20)),
                     child: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Information  :"),
-                          Divider(),
+                          const Text("Informasi Aplikasi  :"),
+                          const Divider(),
                           RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               style: TextStyle(
                                   color: Colors.black87, fontSize: 16.0),
                               children: <TextSpan>[
-                                new TextSpan(
+                                TextSpan(
                                     text:
-                                        "Portofolio App adalah aplikasi yang memberikan kemudahan kepada para Job Applicant untuk mempersiapkan kebutuhan ketika sedang melamar pekerjaan.",
+                                        "Portofolio App adalah aplikasi yang memberikan kemudahan kepada para Job Applicant untuk mempersiapkan kebutuhan ketika sedang melamar pekerjaan. ",
                                     style:
                                         TextStyle(fontWeight: FontWeight.w500)),
-                                new TextSpan(
+                                TextSpan(
                                     text:
                                         "Aplikasi ini menyediakan layanan Profile CV, Portofolio, Contact dan Lain sebagainya.",
                                     style:
@@ -71,7 +71,7 @@ class DescriptionPage extends StatelessWidget {
                             ),
                             textAlign: TextAlign.justify,
                           ),
-                          Divider(),
+                          // const Divider(),
                         ],
                       ),
                     ),

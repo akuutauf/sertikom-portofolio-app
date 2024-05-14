@@ -17,21 +17,21 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (_) => HomePage());
+        return MaterialPageRoute(builder: (_) => const HomePage());
       case '/profile':
-        return MaterialPageRoute(builder: (_) => ProfilePage());
+        return MaterialPageRoute(builder: (_) => const ProfilePage());
       case '/portofolio':
-        return MaterialPageRoute(builder: (_) => PortofolioPage());
+        return MaterialPageRoute(builder: (_) => const PortofolioPage());
       case '/contact':
-        return MaterialPageRoute(builder: (_) => ContactPage());
+        return MaterialPageRoute(builder: (_) => const ContactPage());
       case '/setting':
-        return MaterialPageRoute(builder: (_) => SettingPage());
+        return MaterialPageRoute(builder: (_) => const SettingPage());
       case '/gallery':
-        return MaterialPageRoute(builder: (_) => GalleryPage());
+        return MaterialPageRoute(builder: (_) => const GalleryPage());
       case '/description':
-        return MaterialPageRoute(builder: (_) => DescriptionPage());
+        return MaterialPageRoute(builder: (_) => const DescriptionPage());
       case '/animation':
-        return MaterialPageRoute(builder: (_) => AnimationPage());
+        return MaterialPageRoute(builder: (_) => const AnimationPage());
       default:
         return _errorRoute();
     }
@@ -44,20 +44,20 @@ class RouteGenerator {
       return Scaffold(
         appBar: AppBar(
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(colors: [
               Color.fromARGB(255, 255, 128, 177),
               Color.fromARGB(255, 147, 152, 255)
             ], begin: Alignment.topLeft, end: Alignment.bottomCenter)),
           ),
-          title: Text(
+          title: const Text(
             "Page Not Found",
             style: TextStyle(fontWeight: FontWeight.w600),
           ),
           centerTitle: true,
           // automaticallyImplyLeading: false,
         ),
-        drawer: DrawerWidget(),
+        drawer: const DrawerWidget(),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -65,7 +65,7 @@ class RouteGenerator {
             Hero(
               tag: "error",
               child: Container(
-                padding: EdgeInsets.only(bottom: 20),
+                padding: const EdgeInsets.only(bottom: 20),
                 child: SvgPicture.asset(
                   imageError,
                   width: 200,
@@ -73,8 +73,8 @@ class RouteGenerator {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(15),
-              child: Text(
+              margin: const EdgeInsets.all(15),
+              child: const Text(
                 'Oops something went wrong\nThe page you are looknig for maybe have been removed or unavailable',
                 textAlign: TextAlign.center,
               ),

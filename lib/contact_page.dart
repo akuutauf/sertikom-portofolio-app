@@ -9,28 +9,28 @@ class ContactPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
             Color.fromARGB(255, 255, 128, 177),
             Color.fromARGB(255, 147, 152, 255)
           ], begin: Alignment.topLeft, end: Alignment.bottomCenter)),
         ),
-        title: Text(
+        title: const Text(
           "Contact",
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
         // automaticallyImplyLeading: false,
       ),
-      drawer: DrawerWidget(),
+      drawer: const DrawerWidget(),
       body: Container(
         child: ListView(
           // mainAxisAlignment: MainAxisAlignment.start,
           // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: EdgeInsets.all(15),
-              child: Text(
+              margin: const EdgeInsets.all(15),
+              child: const Text(
                 'CONTACT PAGE',
                 style: TextStyle(fontSize: 20),
                 textAlign: TextAlign.left,
@@ -39,15 +39,15 @@ class ContactPage extends StatelessWidget {
             Container(
               child: Card(
                 elevation: 3,
-                margin: EdgeInsets.only(left: 15, right: 15),
+                margin: const EdgeInsets.only(left: 15, right: 15),
                 child: Container(
                   width: MediaQuery.of(context).size.width * 1,
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   decoration:
                       BoxDecoration(borderRadius: BorderRadius.circular(20)),
                   child: Container(
-                    padding: EdgeInsets.all(10),
-                    child: Column(
+                    padding: const EdgeInsets.all(10),
+                    child: const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Nama Lengkap  : TAUFIK HIDAYAT"),
@@ -58,12 +58,12 @@ class ContactPage extends StatelessWidget {
                         Divider(),
                         Text("Instagram : @akuutauf_"),
                         Divider(),
-                        Text("FaceBook : Taufik Hidayat"),
+                        Text("Facebook : Taufik Hidayat"),
                         Divider(),
                         Text("GitHub : akuutauf"),
                         Divider(),
-                        Text("YouTube : 2A_1019_Taufik Hidayat"),
-                        Divider(),
+                        Text("YouTube : Akuutauf Honkai"),
+                        // Divider(),
                       ],
                     ),
                   ),

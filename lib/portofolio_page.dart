@@ -9,22 +9,22 @@ class PortofolioPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
             Color.fromARGB(255, 255, 128, 177),
             Color.fromARGB(255, 147, 152, 255)
           ], begin: Alignment.topLeft, end: Alignment.bottomCenter)),
         ),
-        title: Text(
+        title: const Text(
           "Portofolio",
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
         // automaticallyImplyLeading: false,
       ),
-      drawer: DrawerWidget(),
+      drawer: const DrawerWidget(),
       body: Container(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: ListView(
           children: [
             Row(
@@ -34,8 +34,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/twibon.jpg'),
                       ),
                     )),
@@ -44,8 +44,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/poster.jpg'),
                       ),
                     )),
@@ -58,8 +58,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/poster.jpg'),
                       ),
                     )),
@@ -68,8 +68,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/twibon.jpg'),
                       ),
                     )),
@@ -82,8 +82,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/twibon.jpg'),
                       ),
                     )),
@@ -92,8 +92,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/poster.jpg'),
                       ),
                     )),
@@ -106,8 +106,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/poster.jpg'),
                       ),
                     )),
@@ -116,8 +116,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/twibon.jpg'),
                       ),
                     )),
@@ -130,8 +130,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/twibon.jpg'),
                       ),
                     )),
@@ -140,8 +140,8 @@ class PortofolioPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.all(3),
-                        margin: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(5),
                         child: Image.asset('assets/images/poster.jpg'),
                       ),
                     )),
